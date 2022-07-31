@@ -16,6 +16,9 @@ public class Teste {
 		
 		clientes.forEach(c -> System.out.println(c.getNome()));
 		
+		Runnable r = () -> System.out.println("fdsfsd");
+		new Thread(r).start();
+		
 		//listar com classe anonima
 //		List<Cliente> clientes = Arrays.asList(c1, c2);
 //		Consumer<Cliente> consumidor = new Consumer<Cliente>() {

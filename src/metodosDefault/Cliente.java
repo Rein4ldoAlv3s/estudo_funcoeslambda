@@ -5,12 +5,14 @@ public class Cliente implements Autentica{
 	private String nome;
 	private boolean status;
 	private String senha;
+	private int pontos;
 	
-	public Cliente(String nome, boolean status, String senha) {
+	public Cliente(String nome, boolean status, String senha, int pontos) {
 		super();
 		this.nome = nome;
 		this.status = status;
 		this.senha = senha;
+		this.pontos = pontos;
 	}
 
 	public String getNome() {
@@ -23,6 +25,14 @@ public class Cliente implements Autentica{
 
 	public String getSenha() {
 		return senha;
+	}
+
+	public int getPontos() {
+		return pontos;
+	}
+
+	public void setPontos(int pontos) {
+		this.pontos = pontos;
 	}
 
 	@Override
