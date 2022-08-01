@@ -44,6 +44,12 @@ public class Cliente implements Autentica{
 		System.out.println("Autenticado!");
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", status=" + status + ", senha=" + senha + ", pontos=" + pontos + "]";
+	}
+	
 	
 	
 }
