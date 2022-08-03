@@ -8,11 +8,11 @@ import java.util.stream.Collectors;
 public class TesteStream {
 
 	public static void main(String[] args) {
-		Cliente c1 = new Cliente("michelli", true, "123", 5);
-		Cliente c2 = new Cliente("maria", true, "456", 10);
-		Cliente c3 = new Cliente("josé", true, "789", 20);
+		Pessoa c1 = new Pessoa("michelli", true, "123", 5);
+		Pessoa c2 = new Pessoa("maria", true, "456", 10);
+		Pessoa c3 = new Pessoa("josé", true, "789", 20);
 
-		List<Cliente> clientes = Arrays.asList(c1, c2, c3);
+		List<Pessoa> clientes = Arrays.asList(c1, c2, c3);
 
 		// Impressão da lista original
 		clientes.forEach(c -> System.out.println(c));
@@ -35,9 +35,9 @@ public class TesteStream {
 //		});
 
 		// Forma simplificada de modificar uma List usando Stream e Collectors
-		List<Cliente> stream = clientes.stream().filter(c -> c.getPontos() > 5).collect(Collectors.toList());
+		List<Pessoa> stream = clientes.stream().filter(c -> c.getPontos() > 5).collect(Collectors.toList());
 		//É possível transformar uma list em um set ou Iterator
-		Set<Cliente> stream2 = clientes.stream().filter(c -> c.getPontos() > 5).collect(Collectors.toSet());
+		Set<Pessoa> stream2 = clientes.stream().filter(c -> c.getPontos() > 5).collect(Collectors.toSet());
 		stream.forEach(c -> System.out.println(c));
 	}
 }

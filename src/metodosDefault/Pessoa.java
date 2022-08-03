@@ -1,13 +1,13 @@
 package metodosDefault;
 
-public class Cliente implements Autentica{
+public class Pessoa implements Autentica{
 
 	private String nome;
 	private boolean status;
 	private String senha;
 	private int pontos;
 	
-	public Cliente(String nome, boolean status, String senha, int pontos) {
+	public Pessoa(String nome, boolean status, String senha, int pontos) {
 		super();
 		this.nome = nome;
 		this.status = status;

@@ -6,18 +6,18 @@ import java.util.function.Consumer;
 
 public class Teste {
 	public static void main(String [] args) {
-		Cliente c1 = new Cliente("michelli", true, "123");
-		Cliente c2 = new Cliente("reinaldo", true, "456");
-		c1.autenticaSenha("123");
-		c2.autenticaSenha("852");
-		
-		//listar com Interface Funcional (Funcao Lambda)
-		List<Cliente> clientes = Arrays.asList(c1,c2);
-		
-		clientes.forEach(c -> System.out.println(c.getNome()));
-		
-		Runnable r = () -> System.out.println("fdsfsd");
-		new Thread(r).start();
+//		Cliente c1 = new Cliente("michelli", true, "123");
+//		//Cliente c2 = new Cliente("reinaldo", true, "456");
+//		c1.autenticaSenha("123");
+//		c2.autenticaSenha("852");
+//		
+//		//listar com Interface Funcional (Funcao Lambda)
+//		List<Cliente> clientes = Arrays.asList(c1,c2);
+//		
+//		clientes.forEach(c -> System.out.println(c.getNome()));
+//		
+//		Runnable r = () -> System.out.println("fdsfsd");
+//		new Thread(r).start();
 		
 		//listar com classe anonima
 //		List<Cliente> clientes = Arrays.asList(c1, c2);
